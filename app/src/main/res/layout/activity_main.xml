@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="127dp">
+
+        <LinearLayout
+            android:id="@+id/sortLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/nameSortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="onSortClick"
+                android:text="@string/sort_name" />
+
+            <Button
+                android:id="@+id/ratingSortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="onSortClick"
+                android:text="@string/sort_rate" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/newRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNewRecipeClick"
+            android:text="@string/new_recipe" />
+
+        <Button
+            android:id="@+id/ingredientsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onIngredientsClick"
+            android:text="@string/ingredients_list" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

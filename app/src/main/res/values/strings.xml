@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Recipe Book</string>
+    <string name="sort_name">Sort by Name</string>
+    <string name="sort_rate">Sort by Rating</string>
+    <string name="new_recipe">Enter New Recipe</string>
+    <string name="ingredients_list">Ingredients List</string>
+
+    <string name="recipe_name">Recipe Name</string>
+    <string name="instructions">Instructions</string>
+
+    <string name="enter">Enter</string>
+    <string name="back">Back</string>
+</resources>
